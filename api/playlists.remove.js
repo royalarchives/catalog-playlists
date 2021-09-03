@@ -1,10 +1,10 @@
-module.exports = (library, options) => {
+module.exports = (catalog, options) => {
   const ids = options.id.split(',')
   for (const id of ids) {
-    const playList = library.getObject(id)
+    const playList = catalog.getObject(id)
     if (!playList) {
       throw new Error('invalid-id')
     }
-    library.playLists.splice(library.playLists.indexOf(playList), 1)
+    catalog.playLists.splice(catalog.playLists.indexOf(playList), 1)
   }
 }

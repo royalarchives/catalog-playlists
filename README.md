@@ -1,6 +1,6 @@
 # Library: Playlists
 
-A module for [Library](https://github.com/lootbox/library) that adds normal and smart playlists.  Smart playlists use rules to filter your content.
+A module for [Library](https://github.com/server/library) that adds normal and smart playlists.  Smart playlists use rules to filter your content.
 
 ### Documentation
 
@@ -12,16 +12,16 @@ A module for [Library](https://github.com/lootbox/library) that adds normal and 
 
 First install the module with `NPM`:
 
-    $ npm install @lootbox/library-playlists
+    $ npm install @royalarchives/library-playlists
 
-If you are using [Library](https://github.com/lootbox/library) from the command-line include the module name in your arguments:
+If you are using [Library](https://github.com/server/library) from the command-line include the module name in your arguments:
 
-    $ node scanner.js @lootbox/library-playlists /path/to/files
+    $ node scanner.js @royalarchives/library-playlists /path/to/files
 
-If you are using [Library](https://github.com/lootbox/library) with NodeJS include the module name in the parameters:
+If you are using [Library](https://github.com/server/library) with NodeJS include the module name in the parameters:
 
-    const Library = require('@lootbox/library')
-    await Library.scan(['@lootbox/library-playlists'], ['/path/to/files'])
+    const Library = require('@royalarchives/library')
+    await Library.scan(['@royalarchives/library-playlists'], ['/path/to/files'])
 
 ## Index data structure
 

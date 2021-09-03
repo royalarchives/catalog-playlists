@@ -1,6 +1,6 @@
-module.exports = (library, options) => {
+module.exports = (catalog, options) => {
   const playList = {
-    id: `playlist_${library.playLists.length + 1}`,
+    id: `playlist_${catalog.playLists.length + 1}`,
     name: options.name,
     type: options.type === 'smart' ? 'smart' : 'normal'
   }
@@ -9,14 +9,14 @@ module.exports = (library, options) => {
     if (options.items) {
       const items = options.items.split(',')
       for (const id of items) {
-        const items = library.getObject(id)
+        const items = catalog.getObject(id)
         if (!items) {
           throw new Error('invalid-id')
         }
         playList.items.push(items.filePath)
       }
     } else if (options.queue) {
-      const queue = library.getObject(options.queue)
+      const queue = catalog.getObject(options.queue)
       if (!queue) {
         throw new Error('invalid-queue')
       }
@@ -28,7 +28,7 @@ module.exports = (library, options) => {
     playList.rules = options.rules
     playList.conjunction = options.conjunction
   }
-  library.playLists.push(playList)
-  library.indexArray([playList])
+  catalog.playLists.push(playList)
+  catalog.indexArray([playList])
   return playList
 }

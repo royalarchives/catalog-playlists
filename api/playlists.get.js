@@ -1,5 +1,5 @@
-module.exports = (library, options) => {
-  const playList = library.getObject(options.id)
+module.exports = (catalog, options) => {
+  const playList = catalog.getObject(options.id)
   if (!playList) {
     throw new Error('invalid-id')
   }
