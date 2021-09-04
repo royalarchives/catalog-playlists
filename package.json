@@ -1,18 +1,18 @@
 {
   "name": "@royalarchives/catalog-playlists",
-  "version": "1.0.0",
+  "version": "1.0.4",
   "description": "Adds smart and normal playlists to Catalog",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/server/server.git"
+    "url": "git+https://github.com/royalarchives/server.git"
   },
-  "author": "server <serverproject@protonmail.com> (http://github.com/server)",
+  "author": "server <serverproject@protonmail.com> (http://github.com/royalarchives)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/server/server/issues"
+    "url": "https://github.com/royalarchives/server/issues"
   },
-  "homepage": "https://github.com/server/server#readme",
+  "homepage": "https://github.com/royalarchives/server#readme",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
